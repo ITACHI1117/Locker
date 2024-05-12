@@ -1,0 +1,58 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 20;
+  justify-content: space-around;
+}
+
+.search-and-logout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-and-logout ul li {
+  padding: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #4070f4;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.1s;
+  color: white;
+}
+.search-and-logout ul li:hover {
+  scale: 1.05;
+}
+.search-and-logout form input {
+  padding: 6px;
+  border-radius: 10px;
+  outline: none;
+}
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-users {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+  width: 100%;
+}
+.student {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 100px;
+}

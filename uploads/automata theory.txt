@@ -1,0 +1,110 @@
+A Context free grammer  is a 4 tuple such that
+ = (N,T,P,S)
+N= finte non empty set of variables
+T = finite set of terminal symbols
+P = Finite non empty set of production rules of form -----
+S= Start Symbol
+
+
+Application
+1. For defining programing language
+2. for passing the proram by constructing syntax tree
+3. for translation of programing languages
+4. for describing arithemtic expressions
+5. for conmstruction of compilers
+
+Properties onf CFG
+If L1 and L2 are two context free grammers then
+1. L1 u L2 are context free
+2. L1 . L2 are context free
+3. L1* and L2* are context free
+4. L1 n L2 not context free language
+5. L1' n L2' not context free language
+
+A grammer is said to be abginous if for a given string generated 
+by a grammer there exists
+1. more than one leftmost derivation is more that one rightmost
+derivation
+2. more than one prase tree
+
+Parse Tree | Derivation
+The process of deriving a string is called derivation while the
+gramatical representation of a derivation is called parse tree
+
+Types of derivation
+
+Leftmost derivation 
+Rightmost derivation
+
+Leftmost derivation is the process of deriving a string by
+expanding the leftmost non terminal at each step
+
+Rightmost derivation is the process of deriving a string by
+expanding the rightmost non terminal at each step
+
+Finite Automata
+An Automation with a fnite number of states is called 
+a finite automation
+
+Finte automation can be classified into two types
+Deterministic finite automation
+Non Deterministic finite automation
+
+DFA is represented by 5 tuple (Q,E,S,q0,F)
+
+-----------------------write this on papaer and snap
+
+NDFA or NFA
+In NFA for a particular input symbol the machine can move to any combination
+of the states in the machine
+
+
+-----------------------write this on papaer and snap
+
+Diffrecnce between 
+
+DFA                                 
+Transaction from a state is to a single particular 
+next state for each input symbol
+
+Empty string transition are not allowed
+
+Back tracking is allowed in DFA
+
+A String is accepted by DFA if it transists to final state
+
+Requires more Space
+
+NFA
+The transition from a state to another can be to multple
+ next states for each input symbol
+
+Empty string is permitted
+
+Back tracking is not alwasy possible
+
+A string is accepted by NDFA if at least one of all possible
+transition ends in a final state
+
+Requires less space
+
+
+PUSH DOWN AUTOMATA
+A push down automata is a way to implement a cotext free grammer in
+a similar way we design Finite automata for regular grammer
+
+1. It is more powerful than FSM
+2. FSM has a very limited memory but PDA has more memory
+3. PDA = Finite state machine 
+
+A Push down automata has 3 components
+1. An input tape
+2. A finite control unit
+3. A stack with infinte size
+
+Diagram
+
+
+A PDA is defined by 7 tuples
+
+Write this and snap
