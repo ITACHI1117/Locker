@@ -89,8 +89,8 @@ section {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 2px;
-  padding-bottom: 5px;
-  margin-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 5px;
   border-radius: 10px;
   cursor: pointer;
 }
