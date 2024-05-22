@@ -12,7 +12,6 @@
     />
     <style>
 body {
-  
   font-family: "Poppins", sans-serif;
   background-color: #f0faff;
 }
@@ -187,7 +186,7 @@ section {
             }
 
             // SQL query to fetch user information
-            $sql = "SELECT *  FROM user  ";
+            $sql = "SELECT * FROM `user` WHERE LEVEL = 400";
             $result = $conn->query($sql);
 
             while($row = $result->fetch_assoc()) {

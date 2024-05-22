@@ -80,6 +80,17 @@ form input {
 .form.login input:focus {
   box-shadow: 0 1px 0 #ddd;
 }
+.form select {
+  height: 60px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 8px;
+  background: #fff;
+}
 form .checkbox {
   display: flex;
   align-items: center;
