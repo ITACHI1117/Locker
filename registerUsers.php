@@ -23,13 +23,14 @@ $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $matric = $_POST['matric'];
 $password = $_POST['password'];
+$email = $_POST['email'];
 $level = $_POST['level'];
 
 // Hash the password
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 // Prepare SQL statement
-$sql = "INSERT INTO user (id, firstname, lastname, matric, level, password) VALUES (?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO user (id, firstname, lastname, matric, email, level, password) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = mysqli_stmt_init($connection);
 
@@ -38,7 +39,7 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
     die(mysqli_error($connection));
 }
 
-mysqli_stmt_bind_param($stmt,"ssssss", $random_id, $firstname, $lastname, $matric, $level, $hashed_password);
+mysqli_stmt_bind_param($stmt,"sssssss", $random_id, $firstname, $lastname, $matric, $email, $level, $hashed_password);
 
 // Execute the statement
 if ($stmt->execute()) {

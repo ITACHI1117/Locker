@@ -47,6 +47,7 @@
           <input type="password" name="password" placeholder="Password" required />
 
           <input type="submit" value="Login" />
+          <a style="color: white" href="forgotPassword.html">Forgot Password?</a>
         </form>
       </div>
 
